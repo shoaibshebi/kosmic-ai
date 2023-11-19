@@ -9,7 +9,7 @@ import PrimaryBtn from "../Reuseable/PrimaryBtn";
 import { data } from "../utils/data.js";
 import SliderComp from "../Reuseable/Slider";
 import AutoCompleteInput from "../Reuseable/AutoCompleteInput";
-import { fadeIn, slideIn, staggerContainer, zoomIn } from "../utils/motion";
+import { fadeIn, staggerContainer, zoomIn } from "../utils/motion";
 
 const Home = () => {
   const [selectedTopic, setSelectedTopic] = useState("Fun");
@@ -21,6 +21,7 @@ const Home = () => {
       variants={staggerContainer}
       viewport={{ once: true, amount: 0.25 }}
       className='flex flex-col px-6 md:px-12 py-8 '
+      style={{ display: "flex", flexDirection: "column" }}
     >
       <motion.div
         variants={fadeIn("down", "spring", 0.4, 1)}

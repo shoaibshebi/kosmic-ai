@@ -7,7 +7,7 @@ const Footer = () => {
       <button className='px-16 py-4 w-full md:w-fit bg-transparent border-neutral-700 text-white border-[1px] rounded-full font-poppins'>
         Back
       </button>
-      <button className='bg-white w-full md:w-fit py-4 bg-transparent border-neutral-700 text-white border-[1px] rounded-full space-x-32 px-8'>
+      <button className='bg-white w-full md:w-fit flex items-center py-4 bg-transparent border-neutral-700 text-white border-[1px] rounded-full space-x-32 px-8'>
         <span className='text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-fuchsia-400 font-poppins'>
           Next
         </span>

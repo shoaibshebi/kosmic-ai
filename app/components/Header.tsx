@@ -9,7 +9,7 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 
 const Header = () => {
   return (
-    <motion.header
+    <motion.div
       initial='hidden'
       whileInView='show'
       variants={staggerContainer}
@@ -71,7 +71,7 @@ const Header = () => {
           />
         </Grid>
       </motion.div>
-    </motion.header>
+    </motion.div>
   );
 };
 

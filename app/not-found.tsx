@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
-import PrimaryBtn from "./Reuseable/PrimaryBtn";
 
 const NotFound: React.FC = () => {
   return (
@@ -18,11 +17,6 @@ const NotFound: React.FC = () => {
       <Typography variant='body1' align='center' mb={4}>
         The page you are looking for does not exist.
       </Typography>
-      <PrimaryBtn
-        bg={false}
-        text='Go Back'
-        clickhandle={() => window.history.back()}
-      />
     </Box>
   );
 };
