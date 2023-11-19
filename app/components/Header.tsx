@@ -17,7 +17,7 @@ const Header = () => {
       className='px-6 md:px-12 py-8 flex items-center bg-zinc-950 border-b-[1px] border-b-neutral-700'
     >
       <motion.div
-        variants={fadeIn("down", "spring", 0.5, 1)}
+        variants={fadeIn("down", "spring", 0.3, 0.5)}
         className='flex justify-between w-full'
       >
         <Grid item className='flex justify-start'>

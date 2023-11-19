@@ -23,7 +23,7 @@ const Home = () => {
       className='flex flex-col px-6 md:px-12 py-8 '
     >
       <motion.div
-        variants={fadeIn("down", "spring", 0.3, 1)}
+        variants={fadeIn("down", "spring", 0.4, 1)}
         className='flex flex-col border-b-[.5px] border-b-neutral-700 py-8'
       >
         <Typography className='text-white text-2xl font-poppins'>
