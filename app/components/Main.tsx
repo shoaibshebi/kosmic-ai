@@ -21,7 +21,7 @@ const Home = () => {
       variants={staggerContainer}
       viewport={{ once: true, amount: 0.25 }}
       className='flex flex-col px-6 md:px-12 py-8 '
-      style={{ display: "flex", flexDirection: "column" }}
+      style={{ display: "flex", flexDirection: "column !important" }}
     >
       <motion.div
         variants={fadeIn("down", "spring", 0.4, 1)}
