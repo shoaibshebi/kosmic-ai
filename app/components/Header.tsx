@@ -3,23 +3,11 @@
 
 import Image from "next/image";
 import { Box, Grid, Typography } from "@mui/material";
-import { motion } from "framer-motion";
-
-import { fadeIn, staggerContainer } from "../utils/motion";
 
 const Header = () => {
   return (
-    <motion.div
-      initial='hidden'
-      whileInView='show'
-      variants={staggerContainer}
-      viewport={{ once: true, amount: 0.25 }}
-      className='px-6 md:px-12 py-8 flex items-center bg-zinc-950 border-b-[1px] border-b-neutral-700'
-    >
-      <motion.div
-        variants={fadeIn("down", "spring", 0.3, 0.5)}
-        className='flex justify-between w-full'
-      >
+    <Grid className='px-6 md:px-12 py-8 flex items-center bg-zinc-950 border-b-[1px] border-b-neutral-700'>
+      <Grid className='flex justify-between w-full'>
         <Grid item className='flex justify-start'>
           <Box className='flex flex-wrap gap-2'>
             <Image
@@ -70,8 +58,8 @@ const Header = () => {
             height={40}
           />
         </Grid>
-      </motion.div>
-    </motion.div>
+      </Grid>
+    </Grid>
   );
 };
 
