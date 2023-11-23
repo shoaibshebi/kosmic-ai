@@ -20,11 +20,11 @@ const Home = () => {
       whileInView='show'
       variants={staggerContainer}
       viewport={{ once: true, amount: 0.25 }}
-      className='flex flex-col px-6 md:px-12 py-8 md:justify-self-start'
+      className='flex flex-col px-6 md:px-12 py-8 md:pt-0'
     >
       <motion.Box
         variants={fadeIn("down", "spring", 0.4, 1)}
-        className='flex flex-col border-b-[.5px] border-b-neutral-700 py-8'
+        className='flex flex-col border-b-[.5px] border-b-neutral-700 py-8 md:mt-[-80px]'
       >
         <Typography className='text-white text-2xl font-poppins'>
           Content type
