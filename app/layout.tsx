@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import dynamic from "next/dynamic";
 
 import "./globals.css";
+import Container from "./components/Container";
 
 const Header = dynamic(() => import("./components/Header"), { ssr: false });
 const Footer = dynamic(() => import("./components/Footer"), { ssr: false });
@@ -21,12 +22,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body
-        className={`${inter.className} bg-[#12111b] relative h-screen font-poppins `}
-      >
-        <Header />
-        {children}
-        <Footer />
+      <body className={`${inter.className} bg-[#12111b]  font-poppins `}>
+        <main className='flex flex-grow flex-col justify-between min-h-screen h-screen'>
+          <Header />
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );

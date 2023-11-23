@@ -20,8 +20,7 @@ const Home = () => {
       whileInView='show'
       variants={staggerContainer}
       viewport={{ once: true, amount: 0.25 }}
-      className='flex flex-col px-6 md:px-12 py-8 '
-      // style={{ display: "flex", flexDirection: "column !important" }}
+      className='flex flex-col px-6 md:px-12 py-8 md:justify-self-start'
     >
       <motion.Box
         variants={fadeIn("down", "spring", 0.4, 1)}
